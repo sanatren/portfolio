@@ -1,0 +1,920 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: {
+              50: '#f0f9ff',
+              100: '#e0f2fe',
+              200: '#bae6fd',
+              300: '#7dd3fc',
+              400: '#38bdf8',
+              500: '#0ea5e9',
+              600: '#0284c7',
+              700: '#0369a1',
+              800: '#075985',
+              900: '#0c4a6e',
+            },
+            accent: {
+              50: '#fff1f2',
+              100: '#ffe4e6',
+              200: '#fecdd3',
+              300: '#fda4af',
+              400: '#fb7185',
+              500: '#f43f5e',
+              600: '#e11d48',
+              700: '#be123c',
+              800: '#9f1239',
+              900: '#881337',
+            },
+            secondary: {
+              50: '#f8fafc',
+              100: '#f1f5f9',
+              200: '#e2e8f0',
+              300: '#cbd5e1',
+              400: '#94a3b8',
+              500: '#64748b',
+              600: '#475569',
+              700: '#334155',
+              800: '#1e293b',
+              900: '#0f172a',
+            },
+          },
+          animation: {
+            'bounce-slow': 'bounce 3s infinite',
+            'pulse-slow': 'pulse 3s infinite',
+            'spin-slow': 'spin 3s linear infinite',
+            'float': 'float 3s infinite',
+            'slide-up': 'slideUp 0.5s ease-out',
+            'slide-left': 'slideLeft 0.5s ease-out',
+            'slide-right': 'slideRight 0.5s ease-out',
+            'fade-in': 'fadeIn 0.5s ease-out',
+          },
+          keyframes: {
+            float: {
+              '0%, 100%': { transform: 'translateY(0)' },
+              '50%': { transform: 'translateY(-10px)' },
+            },
+            slideUp: {
+              '0%': { transform: 'translateY(20px)', opacity: 0 },
+              '100%': { transform: 'translateY(0)', opacity: 1 },
+            },
+            slideLeft: {
+              '0%': { transform: 'translateX(20px)', opacity: 0 },
+              '100%': { transform: 'translateX(0)', opacity: 1 },
+            },
+            slideRight: {
+              '0%': { transform: 'translateX(-20px)', opacity: 0 },
+              '100%': { transform: 'translateX(0)', opacity: 1 },
+            },
+            fadeIn: {
+              '0%': { opacity: 0 },
+              '100%': { opacity: 1 },
+            },
+          },
+        },
+      },
+    }
+  </script>
+  <title>Sanatan Khemariya Portfolio</title>
+  <style>
+    html, body { margin: 0; padding: 0; height: 100%; }
+  </style>
+</head>
+<body>
+<section id="section-911f04ac-9a59-4ac8-b83a-21a2192cd144"><htmlCode>
+<div id="root">
+  <section id="hero" class="min-h-screen flex items-center justify-center bg-gradient-to-br from-primary-50 to-accent-50 relative overflow-hidden">
+    <!-- Animated background elements -->
+    <div class="absolute inset-0 overflow-hidden pointer-events-none">
+      <div class="absolute h-32 w-32 bg-primary-200 rounded-full -top-16 -left-16 animate-pulse-slow opacity-30"></div>
+      <div class="absolute h-48 w-48 bg-accent-200 rounded-full -bottom-24 -right-24 animate-float opacity-30"></div>
+      <div class="absolute h-24 w-24 bg-secondary-200 rounded-full top-1/2 left-1/4 animate-bounce-slow opacity-30"></div>
+    </div>
+
+    <!-- Main hero content -->
+    <div class="container mx-auto px-4 relative z-10">
+      <div class="grid md:grid-cols-2 gap-8 items-center">
+        <!-- Text content -->
+        <div class="text-center md:text-left space-y-6 animate-slide-up">
+          <h1 class="text-4xl md:text-6xl font-bold font-heading bg-clip-text text-transparent bg-gradient-to-r from-primary-600 to-accent-600">
+            Sanatan Khemariya
+          </h1>
+          <p class="text-xl md:text-2xl text-gray-700 font-medium animate-fade-in delay-200">
+            Computer Science Engineer & ML Enthusiast
+          </p>
+          <div class="mt-4 space-y-4 md:space-y-0 md:space-x-4 animate-fade-in delay-300">
+            <a href="#projects" class="inline-block px-8 py-3 bg-primary-600 text-white rounded-lg shadow-lg hover:bg-primary-700 transform hover:-translate-y-1 transition-all duration-300">
+              View Projects
+            </a>
+            <a href="#contact" class="inline-block px-8 py-3 bg-white text-primary-600 rounded-lg shadow-lg hover:bg-gray-50 transform hover:-translate-y-1 transition-all duration-300">
+              Contact Me
+            </a>
+          </div>
+        </div>
+
+        <!-- Animated illustration/stats -->
+        <div class="relative animate-slide-left">
+          <div class="bg-white rounded-2xl shadow-xl p-6 md:p-8 space-y-4 transform hover:scale-105 transition-transform duration-300">
+            <div class="flex items-center space-x-4 border-b border-gray-100 pb-4">
+              <div class="bg-primary-100 p-3 rounded-lg">
+                <i class="fas fa-code text-2xl text-primary-600"></i>
+              </div>
+              <div>
+                <h3 class="text-lg font-semibold">300+ LeetCode Problems</h3>
+                <p class="text-gray-600">Solved with optimal solutions</p>
+              </div>
+            </div>
+            <div class="flex items-center space-x-4 border-b border-gray-100 pb-4">
+              <div class="bg-accent-100 p-3 rounded-lg">
+                <i class="fas fa-trophy text-2xl text-accent-600"></i>
+              </div>
+              <div>
+                <h3 class="text-lg font-semibold">National Finalist</h3>
+                <p class="text-gray-600">Tata Innovant GenAI Hackathon</p>
+              </div>
+            </div>
+            <div class="flex items-center space-x-4">
+              <div class="bg-secondary-100 p-3 rounded-lg">
+                <i class="fas fa-laptop-code text-2xl text-secondary-600"></i>
+              </div>
+              <div>
+                <h3 class="text-lg font-semibold">AI ML Developer</h3>
+                <p class="text-gray-600">Python & Machine Learning</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Scroll indicator -->
+    <div class="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
+      <a href="#about" class="text-gray-600 hover:text-primary-600 transition-colors duration-300">
+        <i class="fas fa-chevron-down text-2xl"></i>
+      </a>
+    </div>
+  </section>
+</div>
+</htmlCode></section>
+<section id="section-c738b1d2-6833-418f-bb86-1ad9abe6dc18"><htmlCode>
+<div id="root">
+  <section id="about" class="py-20 bg-white relative overflow-hidden">
+    <!-- Decorative elements -->
+    <div class="absolute inset-0 overflow-hidden pointer-events-none">
+      <div class="absolute top-0 left-0 w-64 h-64 bg-primary-50 rounded-full -translate-x-1/2 -translate-y-1/2 opacity-30"></div>
+      <div class="absolute bottom-0 right-0 w-96 h-96 bg-accent-50 rounded-full translate-x-1/3 translate-y-1/3 opacity-30"></div>
+    </div>
+
+    <div class="container mx-auto px-4 relative">
+      <!-- Section header -->
+      <div class="text-center mb-16">
+        <h2 class="text-3xl md:text-4xl font-bold font-heading mb-4 bg-clip-text text-transparent bg-gradient-to-r from-primary-600 to-accent-600 inline-block">
+          About Me
+        </h2>
+        <div class="w-20 h-1 bg-gradient-to-r from-primary-500 to-accent-500 mx-auto rounded-full"></div>
+      </div>
+
+      <!-- About content -->
+      <div class="grid md:grid-cols-2 gap-12 items-center">
+        <!-- Left column: Career focus -->
+        <div class="space-y-6 animate-slide-right">
+          <div class="bg-white rounded-2xl shadow-lg p-6 hover:shadow-xl transition-shadow duration-300">
+            <h3 class="text-2xl font-bold text-gray-800 mb-4">
+              <i class="fas fa-rocket text-primary-500 mr-2"></i>
+              Career Focus
+            </h3>
+            <p class="text-gray-600 leading-relaxed">
+              As a Computer Science Engineering student at Jaypee University, I'm passionate about developing innovative solutions using machine learning and full-stack development. My focus lies in creating intelligent applications that solve real-world problems.
+            </p>
+          </div>
+
+          <!-- Education -->
+          <div class="bg-white rounded-2xl shadow-lg p-6 hover:shadow-xl transition-shadow duration-300">
+            <h3 class="text-2xl font-bold text-gray-800 mb-4">
+              <i class="fas fa-graduation-cap text-accent-500 mr-2"></i>
+              Education
+            </h3>
+            <div class="space-y-4">
+              <div>
+                <p class="font-semibold text-gray-800">Bachelor of Technology in Computer Science</p>
+                <p class="text-gray-600">Jaypee University of Engineering and Technology</p>
+                <p class="text-primary-600">2022 - 2026</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right column: Skills & Interests -->
+        <div class="space-y-6 animate-slide-left">
+          <!-- Technical Expertise -->
+          <div class="bg-white rounded-2xl shadow-lg p-6 hover:shadow-xl transition-shadow duration-300">
+            <h3 class="text-2xl font-bold text-gray-800 mb-4">
+              <i class="fas fa-laptop-code text-secondary-500 mr-2"></i>
+              Technical Expertise
+            </h3>
+            <div class="grid grid-cols-2 gap-4">
+              <div class="flex items-center space-x-2">
+                <i class="fab fa-python text-xl text-primary-500"></i>
+                <span>Python</span>
+              </div>
+              <div class="flex items-center space-x-2">
+                <i class="fas fa-brain text-xl text-accent-500"></i>
+                <span>AI & ML</span>
+              </div>
+              <div class="flex items-center space-x-2">
+                <i class="fas fa-database text-xl text-secondary-500"></i>
+                <span>Databases</span>
+              </div>
+              <div class="flex items-center space-x-2">
+                <i class="fas fa-code text-xl text-primary-500"></i>
+                <span>IOS Development</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Key Achievements -->
+          <div class="bg-white rounded-2xl shadow-lg p-6 hover:shadow-xl transition-shadow duration-300">
+            <h3 class="text-2xl font-bold text-gray-800 mb-4">
+              <i class="fas fa-trophy text-accent-500 mr-2"></i>
+              Key Achievements
+            </h3>
+            <ul class="space-y-3">
+              <li class="flex items-start">
+                <i class="fas fa-check-circle text-primary-500 mt-1 mr-2"></i>
+                <span class="text-gray-600">National Finalist in Tata Innovant GenAI Hackathon</span>
+              </li>
+              <li class="flex items-start">
+                <i class="fas fa-check-circle text-primary-500 mt-1 mr-2"></i>
+                <span class="text-gray-600">300+ LeetCode Problems Solved</span>
+              </li>
+              <li class="flex items-start">
+                <i class="fas fa-check-circle text-primary-500 mt-1 mr-2"></i>
+                <span class="text-gray-600">Developed Multiple ML-Powered Applications</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
+</htmlCode></section>
+<section id="section-ca721c53-d5d1-4c05-93e2-a11dc4287815"><htmlCode>
+<div id="root">
+  <section id="skills" class="py-20 bg-gray-50">
+    <div class="container mx-auto px-4">
+      <!-- Section header -->
+      <div class="text-center mb-16">
+        <h2 class="text-3xl md:text-4xl font-bold font-heading mb-4 bg-clip-text text-transparent bg-gradient-to-r from-primary-600 to-accent-600 inline-block">
+          <i class="fas fa-tools mr-2"></i>Technical Skills
+        </h2>
+        <div class="w-20 h-1 bg-gradient-to-r from-primary-500 to-accent-500 mx-auto rounded-full"></div>
+      </div>
+
+      <!-- Skills grid - Modified version -->
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <!-- Languages -->
+        <div class="bg-white rounded-2xl shadow-lg p-6 transform hover:-translate-y-2 transition-all duration-300 animate-slide-up">
+          <div class="flex items-center mb-6">
+            <div class="bg-primary-100 p-3 rounded-lg">
+              <i class="fas fa-code text-2xl text-primary-600"></i>
+            </div>
+            <h3 class="text-xl font-bold ml-4">Languages</h3>
+          </div>
+          <div class="space-y-4">
+            <div class="flex items-center p-3 bg-gray-50 rounded-lg">
+              <i class="fab fa-python text-primary-500 mr-3"></i>
+              <span>Python</span>
+            </div>
+            <div class="flex items-center p-3 bg-gray-50 rounded-lg">
+              <i class="fas fa-code text-primary-500 mr-3"></i>
+              <span>C++</span>
+            </div>
+            <div class="flex items-center p-3 bg-gray-50 rounded-lg">
+              <i class="fab fa-swift text-primary-500 mr-3"></i>
+              <span>Swift</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Frameworks -->
+        <div class="bg-white rounded-2xl shadow-lg p-6 transform hover:-translate-y-2 transition-all duration-300 animate-slide-up">
+          <div class="flex items-center mb-6">
+            <div class="bg-accent-100 p-3 rounded-lg">
+              <i class="fas fa-layer-group text-2xl text-accent-600"></i>
+            </div>
+            <h3 class="text-xl font-bold ml-4">Frameworks</h3>
+          </div>
+          <div class="space-y-4">
+            <div class="flex items-center p-3 bg-gray-50 rounded-lg">
+              <i class="fas fa-bolt text-accent-500 mr-3"></i>
+              <span>FastAPI</span>
+            </div>
+            <div class="flex items-center p-3 bg-gray-50 rounded-lg">
+              <i class="fas fa-link text-accent-500 mr-3"></i>
+              <span>Langchain</span>
+            </div>
+            <div class="flex items-center p-3 bg-gray-50 rounded-lg">
+              <i class="fas fa-stream text-accent-500 mr-3"></i>
+              <span>Streamlit</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- ML Libraries -->
+        <div class="bg-white rounded-2xl shadow-lg p-6 transform hover:-translate-y-2 transition-all duration-300 animate-slide-up">
+          <div class="flex items-center mb-6">
+            <div class="bg-secondary-100 p-3 rounded-lg">
+              <i class="fas fa-brain text-2xl text-secondary-600"></i>
+            </div>
+            <h3 class="text-xl font-bold ml-4">ML Libraries</h3>
+          </div>
+          <div class="space-y-4">
+            <div class="flex items-center p-3 bg-gray-50 rounded-lg">
+              <i class="fas fa-network-wired text-secondary-500 mr-3"></i>
+              <span>TensorFlow</span>
+            </div>
+            <div class="flex items-center p-3 bg-gray-50 rounded-lg">
+              <i class="fas fa-fire text-secondary-500 mr-3"></i>
+              <span>PyTorch</span>
+            </div>
+            <div class="flex items-center p-3 bg-gray-50 rounded-lg">
+              <i class="fas fa-cogs text-secondary-500 mr-3"></i>
+              <span>Scikit-learn</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
+</htmlCode></section>
+<section id="section-7b99a3c2-38f6-47b2-b312-ea4e492d2668"><htmlCode>
+<div id="root">
+  <section id="projects" class="py-20 bg-gray-50">
+    <div class="container mx-auto px-4">
+      <!-- Section header -->
+      <div class="text-center mb-16">
+        <h2 class="text-3xl md:text-4xl font-bold font-heading mb-4 bg-clip-text text-transparent bg-gradient-to-r from-primary-600 to-accent-600 inline-block">
+          <i class="fas fa-rocket mr-2"></i>Featured Projects
+        </h2>
+        <div class="w-20 h-1 bg-gradient-to-r from-primary-500 to-accent-500 mx-auto rounded-full"></div>
+      </div>
+
+      <!-- Projects grid -->
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <!-- EasyNotes -->
+        <div class="bg-white rounded-2xl shadow-lg overflow-hidden group hover:shadow-xl transform hover:-translate-y-2 transition-all duration-300 animate-slide-up">
+          <div class="p-6">
+            <div class="flex items-center mb-4">
+              <div class="bg-primary-100 p-3 rounded-lg">
+                <i class="fas fa-code-branch text-2xl text-primary-600"></i>
+              </div>
+              <h3 class="text-2xl font-bold ml-4 group-hover:text-primary-600 transition-colors">EasyNotes</h3>
+            </div>
+            <p class="text-gray-600 mb-4">Intelligent note-taking application with ML-powered sentence prediction</p>
+            <div class="flex flex-wrap gap-2 mb-4">
+              <span class="px-3 py-1 text-sm bg-primary-100 text-primary-700 rounded-full">Python</span>
+              <span class="px-3 py-1 text-sm bg-secondary-100 text-secondary-700 rounded-full">FastAPI</span>
+              <span class="px-3 py-1 text-sm bg-accent-100 text-accent-700 rounded-full">TensorFlow</span>
+              <span class="px-3 py-1 text-sm bg-primary-100 text-primary-700 rounded-full">Supabase</span>
+            </div>
+            <ul class="space-y-2 mb-6">
+              <li class="flex items-start">
+                <i class="fas fa-check text-primary-500 mt-1 mr-2"></i>
+                <span class="text-gray-600">LSTM-powered sentence prediction</span>
+              </li>
+              <li class="flex items-start">
+                <i class="fas fa-check text-primary-500 mt-1 mr-2"></i>
+                <span class="text-gray-600">Real-time data synchronization</span>
+              </li>
+              <li class="flex items-start">
+                <i class="fas fa-check text-primary-500 mt-1 mr-2"></i>
+                <span class="text-gray-600">RESTful API architecture</span>
+              </li>
+            </ul>
+            <a href="https://github.com/sanatren/easy-notes" target="_blank" class="inline-flex items-center text-primary-600 hover:text-primary-700 font-medium">
+              View Project <i class="fas fa-arrow-right ml-2 transition-transform group-hover:translate-x-1"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Banking Churn Predictor -->
+        <div class="bg-white rounded-2xl shadow-lg overflow-hidden group hover:shadow-xl transform hover:-translate-y-2 transition-all duration-300 animate-slide-up" style="animation-delay: 200ms;">
+          <div class="p-6">
+            <div class="flex items-center mb-4">
+              <div class="bg-accent-100 p-3 rounded-lg">
+                <i class="fas fa-robot text-2xl text-accent-600"></i>
+              </div>
+              <h3 class="text-2xl font-bold ml-4 group-hover:text-accent-600 transition-colors">Banking Churn Predictor</h3>
+            </div>
+            <p class="text-gray-600 mb-4">ML-powered customer churn prediction system</p>
+            <div class="flex flex-wrap gap-2 mb-4">
+              <span class="px-3 py-1 text-sm bg-accent-100 text-accent-700 rounded-full">TensorFlow</span>
+              <span class="px-3 py-1 text-sm bg-primary-100 text-primary-700 rounded-full">Scikit-learn</span>
+              <span class="px-3 py-1 text-sm bg-secondary-100 text-secondary-700 rounded-full">Streamlit</span>
+            </div>
+            <ul class="space-y-2 mb-6">
+              <li class="flex items-start">
+                <i class="fas fa-check text-accent-500 mt-1 mr-2"></i>
+                <span class="text-gray-600">Advanced feature engineering</span>
+              </li>
+              <li class="flex items-start">
+                <i class="fas fa-check text-accent-500 mt-1 mr-2"></i>
+                <span class="text-gray-600">Interactive dashboard</span>
+              </li>
+              <li class="flex items-start">
+                <i class="fas fa-check text-accent-500 mt-1 mr-2"></i>
+                <span class="text-gray-600">Real-time predictions</span>
+              </li>
+            </ul>
+            <a href="https://github.com/sanatren/customer_churn" target="_blank" class="inline-flex items-center text-accent-600 hover:text-accent-700 font-medium">
+              View Project <i class="fas fa-arrow-right ml-2 transition-transform group-hover:translate-x-1"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- AirFare Estimator -->
+        <div class="bg-white rounded-2xl shadow-lg overflow-hidden group hover:shadow-xl transform hover:-translate-y-2 transition-all duration-300 animate-slide-up" style="animation-delay: 400ms;">
+          <div class="p-6">
+            <div class="flex items-center mb-4">
+              <div class="bg-secondary-100 p-3 rounded-lg">
+                <i class="fas fa-chart-line text-2xl text-secondary-600"></i>
+              </div>
+              <h3 class="text-2xl font-bold ml-4 group-hover:text-secondary-600 transition-colors">AirFare Estimator</h3>
+            </div>
+            <p class="text-gray-600 mb-4">Predictive analytics for flight fare estimation</p>
+            <div class="flex flex-wrap gap-2 mb-4">
+              <span class="px-3 py-1 text-sm bg-secondary-100 text-secondary-700 rounded-full">Python</span>
+              <span class="px-3 py-1 text-sm bg-primary-100 text-primary-700 rounded-full">NumPy</span>
+              <span class="px-3 py-1 text-sm bg-accent-100 text-accent-700 rounded-full">Streamlit</span>
+            </div>
+            <ul class="space-y-2 mb-6">
+              <li class="flex items-start">
+                <i class="fas fa-check text-secondary-500 mt-1 mr-2"></i>
+                <span class="text-gray-600">Historical data analysis</span>
+              </li>
+              <li class="flex items-start">
+                <i class="fas fa-check text-secondary-500 mt-1 mr-2"></i>
+                <span class="text-gray-600">Optimized data pipeline</span>
+              </li>
+              <li class="flex items-start">
+                <i class="fas fa-check text-secondary-500 mt-1 mr-2"></i>
+                <span class="text-gray-600">Interactive visualizations</span>
+              </li>
+            </ul>
+            <a href="https://github.com/sanatren/airfare-price-estimator" target="_blank" class="inline-flex items-center text-secondary-600 hover:text-secondary-700 font-medium">
+              View Project <i class="fas fa-arrow-right ml-2 transition-transform group-hover:translate-x-1"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Speech to Text -->
+        <div class="bg-white rounded-2xl shadow-lg overflow-hidden group hover:shadow-xl transform hover:-translate-y-2 transition-all duration-300 animate-slide-up" style="animation-delay: 600ms;">
+          <div class="p-6">
+            <div class="flex items-center mb-4">
+              <div class="bg-primary-100 p-3 rounded-lg">
+                <i class="fas fa-microphone text-2xl text-primary-600"></i>
+              </div>
+              <h3 class="text-2xl font-bold ml-4 group-hover:text-primary-600 transition-colors">Speech to Text</h3>
+            </div>
+            <p class="text-gray-600 mb-4">Deep learning powered audio transcription system</p>
+            <div class="flex flex-wrap gap-2 mb-4">
+              <span class="px-3 py-1 text-sm bg-primary-100 text-primary-700 rounded-full">PyTorch</span>
+              <span class="px-3 py-1 text-sm bg-accent-100 text-accent-700 rounded-full">Librosa</span>
+              <span class="px-3 py-1 text-sm bg-secondary-100 text-secondary-700 rounded-full">NumPy</span>
+            </div>
+            <ul class="space-y-2 mb-6">
+              <li class="flex items-start">
+                <i class="fas fa-check text-primary-500 mt-1 mr-2"></i>
+                <span class="text-gray-600">Audio feature extraction</span>
+              </li>
+              <li class="flex items-start">
+                <i class="fas fa-check text-primary-500 mt-1 mr-2"></i>
+                <span class="text-gray-600">Noise filtering</span>
+              </li>
+              <li class="flex items-start">
+                <i class="fas fa-check text-primary-500 mt-1 mr-2"></i>
+                <span class="text-gray-600">Data augmentation</span>
+              </li>
+            </ul>
+            <a href="https://github.com/sanatren/speech_recognition" target="_blank" class="inline-flex items-center text-primary-600 hover:text-primary-700 font-medium">
+              View Project <i class="fas fa-arrow-right ml-2 transition-transform group-hover:translate-x-1"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
+</htmlCode></section>
+<section id="section-72f92c6a-4d61-48c6-a784-50d5f8106efb"><htmlCode>
+<div id="root">
+  <section id="achievements" class="py-20 bg-white">
+    <div class="container mx-auto px-4">
+      <!-- Section header -->
+      <div class="text-center mb-16">
+        <h2 class="text-3xl md:text-4xl font-bold font-heading mb-4 bg-clip-text text-transparent bg-gradient-to-r from-primary-600 to-accent-600 inline-block">
+          <i class="fas fa-trophy mr-2"></i>Achievements & Recognition
+        </h2>
+        <div class="w-20 h-1 bg-gradient-to-r from-primary-500 to-accent-500 mx-auto rounded-full"></div>
+      </div>
+
+      <!-- Achievement cards -->
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <!-- Hackathon Achievement -->
+        <div class="bg-white rounded-2xl shadow-lg p-6 group hover:shadow-xl transform hover:-translate-y-2 transition-all duration-300 animate-slide-up">
+          <div class="flex items-center mb-6">
+            <div class="bg-accent-100 p-4 rounded-full">
+              <i class="fas fa-award text-3xl text-accent-600 animate-bounce-slow"></i>
+            </div>
+            <div class="ml-4">
+              <h3 class="text-2xl font-bold text-gray-800 group-hover:text-accent-600 transition-colors">National Finalist</h3>
+              <p class="text-gray-600">Tata Innovant GenAI Hackathon</p>
+            </div>
+          </div>
+          <p class="text-gray-600 mb-4">Selected as the only team from Madhya Pradesh among 2600+ participating teams.</p>
+          <div class="bg-accent-50 rounded-lg p-4">
+            <div class="flex items-center">
+              <i class="fas fa-medal text-accent-500 mr-2"></i>
+              <span class="text-accent-700 font-medium">Top 1% of participants</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- LeetCode Achievement -->
+        <div class="bg-white rounded-2xl shadow-lg p-6 group hover:shadow-xl transform hover:-translate-y-2 transition-all duration-300 animate-slide-up" style="animation-delay: 200ms;">
+          <div class="flex items-center mb-6">
+            <div class="bg-primary-100 p-4 rounded-full">
+              <i class="fas fa-certificate text-3xl text-primary-600 animate-spin-slow"></i>
+            </div>
+            <div class="ml-4">
+              <h3 class="text-2xl font-bold text-gray-800 group-hover:text-primary-600 transition-colors">LeetCode Master</h3>
+              <p class="text-gray-600">Problem Solving Excellence</p>
+            </div>
+          </div>
+          <p class="text-gray-600 mb-4">Successfully solved over 300 algorithmic problems with optimal solutions.</p>
+          <div class="grid grid-cols-3 gap-4">
+            <div class="bg-primary-50 rounded-lg p-3 text-center">
+              <div class="text-xl font-bold text-primary-600">300+</div>
+              <div class="text-sm text-primary-700">Problems</div>
+            </div>
+            <div class="bg-primary-50 rounded-lg p-3 text-center">
+              <div class="text-xl font-bold text-primary-600">DSA</div>
+              <div class="text-sm text-primary-700">Focus</div>
+            </div>
+            <div class="bg-primary-50 rounded-lg p-3 text-center">
+              <div class="text-xl font-bold text-primary-600">O(n)</div>
+              <div class="text-sm text-primary-700">Optimal</div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+</div>
+</htmlCode></section>
+<section id="section-268885ab-d80f-4d8c-86f7-c3b78fb6a300"><htmlCode>
+<div id="root">
+  <section id="education" class="py-20 bg-gray-50">
+    <div class="container mx-auto px-4">
+      <!-- Section header -->
+      <div class="text-center mb-16">
+        <h2 class="text-3xl md:text-4xl font-bold font-heading mb-4 bg-clip-text text-transparent bg-gradient-to-r from-primary-600 to-accent-600 inline-block">
+          Education Journey
+        </h2>
+        <div class="w-20 h-1 bg-gradient-to-r from-primary-500 to-accent-500 mx-auto rounded-full"></div>
+      </div>
+
+      <!-- Education content -->
+      <div class="max-w-4xl mx-auto">
+        <!-- Current Education -->
+        <div class="bg-white rounded-2xl shadow-lg p-8 mb-8 transform hover:-translate-y-2 transition-all duration-300 animate-slide-up">
+          <div class="flex flex-col md:flex-row md:items-center gap-6">
+            <div class="bg-primary-100 p-4 rounded-full flex-shrink-0">
+              <i class="fas fa-university text-4xl text-primary-600 animate-pulse-slow"></i>
+            </div>
+            <div class="flex-grow">
+              <h3 class="text-2xl font-bold text-gray-800 mb-2">Bachelor of Technology in Computer Science</h3>
+              <p class="text-xl text-primary-600 mb-2">Jaypee University of Engineering and Technology</p>
+              <p class="text-gray-600 mb-4">August 2022 - July 2026 | Guna, India</p>
+              
+              <!-- Current GPA/Achievements -->
+              <div class="flex flex-wrap gap-4 mb-6">
+                <div class="bg-primary-50 rounded-lg px-4 py-2">
+                  <i class="fas fa-star text-primary-500 mr-2"></i>
+                  <span class="text-primary-700">Core CS Focus</span>
+                </div>
+                <div class="bg-accent-50 rounded-lg px-4 py-2">
+                  <i class="fas fa-award text-accent-500 mr-2"></i>
+                  <span class="text-accent-700">ML Specialization</span>
+                </div>
+              </div>
+
+              <!-- Key Courses Section -->
+              <div class="space-y-4">
+                <h4 class="text-lg font-semibold text-gray-800">Key Courses</h4>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                  <div class="flex items-center space-x-2">
+                    <i class="fas fa-check-circle text-primary-500"></i>
+                    <span>Operating Systems</span>
+                  </div>
+                  <div class="flex items-center space-x-2">
+                    <i class="fas fa-check-circle text-primary-500"></i>
+                    <span>Computer Networks</span>
+                  </div>
+                  <div class="flex items-center space-x-2">
+                    <i class="fas fa-check-circle text-primary-500"></i>
+                    <span>Data Structures</span>
+                  </div>
+                  <div class="flex items-center space-x-2">
+                    <i class="fas fa-check-circle text-primary-500"></i>
+                    <span>Algorithms</span>
+                  </div>
+                  <div class="flex items-center space-x-2">
+                    <i class="fas fa-check-circle text-primary-500"></i>
+                    <span>Machine Learning</span>
+                  </div>
+                  <div class="flex items-center space-x-2">
+                    <i class="fas fa-check-circle text-primary-500"></i>
+                    <span>Databases</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        
+      </div>
+    </div>
+  </section>
+</div>
+</htmlCode></section>
+<section id="section-b6bd5c72-5fa1-4135-8800-1f7b50ce9cd7"><htmlCode>
+<div id="root">
+  <section id="certifications" class="py-20 bg-white">
+    <div class="container mx-auto px-4">
+      <!-- Section header -->
+      <div class="text-center mb-16">
+        <h2 class="text-3xl md:text-4xl font-bold font-heading mb-4 bg-clip-text text-transparent bg-gradient-to-r from-primary-600 to-accent-600 inline-block">
+          Certifications & Training
+        </h2>
+        <div class="w-20 h-1 bg-gradient-to-r from-primary-500 to-accent-500 mx-auto rounded-full"></div>
+      </div>
+
+      <!-- Certifications grid -->
+      <div class="max-w-5xl mx-auto">
+        <!-- Primary certifications -->
+        <div class="grid md:grid-cols-2 gap-8 mb-12">
+          <!-- Kaggle Certification -->
+          <div class="bg-white rounded-2xl shadow-lg p-8 group hover:shadow-xl transform hover:-translate-y-2 transition-all duration-300 animate-slide-up">
+            <div class="flex items-center mb-6">
+              <div class="bg-primary-100 p-4 rounded-full">
+                <i class="fab fa-kaggle text-3xl text-primary-600 animate-pulse-slow"></i>
+              </div>
+              <div class="ml-4">
+                <h3 class="text-2xl font-bold text-gray-800 group-hover:text-primary-600 transition-colors">Kaggle Certification</h3>
+                <p class="text-gray-600">Data Analysis Specialization</p>
+              </div>
+            </div>
+            <div class="space-y-4">
+              <div class="bg-primary-50 rounded-lg p-4">
+                <h4 class="font-semibold text-primary-700 mb-2">Pandas for Data Analysis</h4>
+                <ul class="space-y-2">
+                  <li class="flex items-start">
+                    <i class="fas fa-check-circle text-primary-500 mt-1 mr-2"></i>
+                    <span class="text-gray-600">Advanced data manipulation techniques</span>
+                  </li>
+                  <li class="flex items-start">
+                    <i class="fas fa-check-circle text-primary-500 mt-1 mr-2"></i>
+                    <span class="text-gray-600">Data cleaning and preprocessing</span>
+                  </li>
+                </ul>
+              </div>
+              <a href="https://www.kaggle.com/learn/certification/sanatankhemariya/pandas" target="_blank" class="inline-flex items-center text-primary-600 hover:text-primary-700 font-medium">
+                View Certificate <i class="fas fa-arrow-right ml-2 transition-transform group-hover:translate-x-1"></i>
+              </a>
+            </div>
+          </div>
+
+          <!-- Tata Technologies Certification -->
+          <div class="bg-white rounded-2xl shadow-lg p-8 group hover:shadow-xl transform hover:-translate-y-2 transition-all duration-300 animate-slide-up" style="animation-delay: 200ms;">
+            <div class="flex items-center mb-6">
+              <div class="bg-accent-100 p-4 rounded-full">
+                <i class="fas fa-robot text-3xl text-accent-600 animate-float"></i>
+              </div>
+              <div class="ml-4">
+                <h3 class="text-2xl font-bold text-gray-800 group-hover:text-accent-600 transition-colors">Tata Technologies</h3>
+                <p class="text-gray-600">AI Fundamentals</p>
+              </div>
+            </div>
+            <div class="space-y-4">
+              <div class="bg-accent-50 rounded-lg p-4">
+                <h4 class="font-semibold text-accent-700 mb-2">Introduction to Generative AI</h4>
+                <ul class="space-y-2">
+                  <li class="flex items-start">
+                    <i class="fas fa-check-circle text-accent-500 mt-1 mr-2"></i>
+                    <span class="text-gray-600">Foundation models and architectures</span>
+                  </li>
+                  <li class="flex items-start">
+                    <i class="fas fa-check-circle text-accent-500 mt-1 mr-2"></i>
+                    <span class="text-gray-600">Practical AI applications</span>
+                  </li>
+                </ul>
+              </div>
+              <a href="https://drive.google.com/file/d/110EHTBJq-1dwjutQDLAF0iROXvNa5TLo/view" target="_blank" class="inline-flex items-center text-accent-600 hover:text-accent-700 font-medium">
+                View Certificate <i class="fas fa-arrow-right ml-2 transition-transform group-hover:translate-x-1"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Skills showcase -->
+        <div class="bg-gradient-to-r from-primary-50 to-accent-50 rounded-2xl p-8 animate-slide-up" style="animation-delay: 400ms;">
+          <div class="text-center mb-8">
+            <h3 class="text-2xl font-bold text-gray-800">Skills Acquired</h3>
+            <p class="text-gray-600">Through certifications and practical application</p>
+          </div>
+          <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+            <div class="bg-white rounded-lg p-4 text-center hover:shadow-md transition-shadow">
+              <i class="fas fa-database text-primary-500 text-2xl mb-2"></i>
+              <p class="font-medium">Data Analysis</p>
+            </div>
+            <div class="bg-white rounded-lg p-4 text-center hover:shadow-md transition-shadow">
+              <i class="fas fa-brain text-accent-500 text-2xl mb-2"></i>
+              <p class="font-medium">Machine Learning</p>
+            </div>
+            <div class="bg-white rounded-lg p-4 text-center hover:shadow-md transition-shadow">
+              <i class="fas fa-code text-primary-500 text-2xl mb-2"></i>
+              <p class="font-medium">Python</p>
+            </div>
+            <div class="bg-white rounded-lg p-4 text-center hover:shadow-md transition-shadow">
+              <i class="fas fa-robot text-accent-500 text-2xl mb-2"></i>
+              <p class="font-medium">AI Development</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
+</htmlCode></section>
+<section id="section-554814ef-acb3-4a27-9df1-0b5edcc2043f"><htmlCode>
+<div id="root">
+  <section id="contact" class="py-20 bg-gray-50">
+    <div class="container mx-auto px-4">
+      <!-- Section header -->
+      <div class="text-center mb-16">
+        <h2 class="text-3xl md:text-4xl font-bold font-heading mb-4 bg-clip-text text-transparent bg-gradient-to-r from-primary-600 to-accent-600 inline-block">
+          <i class="fas fa-paper-plane mr-2"></i>Let's Connect
+        </h2>
+        <div class="w-20 h-1 bg-gradient-to-r from-primary-500 to-accent-500 mx-auto rounded-full"></div>
+        <p class="text-gray-600 mt-4 max-w-2xl mx-auto">I'm always interested in hearing about new projects and opportunities.</p>
+      </div>
+
+      <!-- Contact Links -->
+      <div class="max-w-4xl mx-auto">
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-8">
+          <!-- Email -->
+          <a href="mailto:sanatankhemariya04@gmail.com" 
+             class="group bg-white rounded-2xl shadow-lg p-6 hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 text-center">
+            <div class="flex flex-col items-center">
+              <div class="bg-primary-100 p-4 rounded-full mb-4 group-hover:bg-primary-200 transition-colors">
+                <i class="fas fa-envelope text-3xl text-primary-600"></i>
+              </div>
+              <h3 class="font-semibold text-gray-800 mb-2">Email</h3>
+              <p class="text-sm text-gray-600 break-all">sanatankhemariya04<wbr>@gmail.com</p>
+            </div>
+          </a>
+
+          <!-- LinkedIn -->
+          <a href="https://linkedin.com/in/sanatank" target="_blank" rel="noopener noreferrer" 
+             class="group bg-white rounded-2xl shadow-lg p-6 hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 text-center">
+            <div class="flex flex-col items-center">
+              <div class="bg-accent-100 p-4 rounded-full mb-4 group-hover:bg-accent-200 transition-colors">
+                <i class="fab fa-linkedin-in text-3xl text-accent-600"></i>
+              </div>
+              <h3 class="font-semibold text-gray-800 mb-2">LinkedIn</h3>
+              <p class="text-sm text-gray-600">@sanatank</p>
+            </div>
+          </a>
+
+          <!-- GitHub -->
+          <a href="https://github.com/sanatren" target="_blank" rel="noopener noreferrer" 
+             class="group bg-white rounded-2xl shadow-lg p-6 hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 text-center">
+            <div class="flex flex-col items-center">
+              <div class="bg-secondary-100 p-4 rounded-full mb-4 group-hover:bg-secondary-200 transition-colors">
+                <i class="fab fa-github text-3xl text-secondary-600"></i>
+              </div>
+              <h3 class="font-semibold text-gray-800 mb-2">GitHub</h3>
+              <p class="text-sm text-gray-600">@sanatren</p>
+            </div>
+          </a>
+
+          <!-- LeetCode -->
+          <a href="https://leetcode.com/sanatan_khemariya" target="_blank" rel="noopener noreferrer" 
+             class="group bg-white rounded-2xl shadow-lg p-6 hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 text-center">
+            <div class="flex flex-col items-center">
+              <div class="bg-primary-100 p-4 rounded-full mb-4 group-hover:bg-primary-200 transition-colors">
+                <i class="fas fa-code text-3xl text-primary-600"></i>
+              </div>
+              <h3 class="font-semibold text-gray-800 mb-2">LeetCode</h3>
+              <p class="text-sm text-gray-600">@sanatan_khemariya</p>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
+</htmlCode></section>
+<section id="section-72845ab8-a883-46a2-a916-757f91e326f2"><htmlCode>
+<div id="root">
+  <footer id="footer" class="bg-gradient-to-br from-gray-900 to-gray-800 text-white py-12">
+    <div class="container mx-auto px-4">
+      <!-- Footer content -->
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
+        <!-- About -->
+        <div class="col-span-1 md:col-span-2">
+          <h3 class="text-2xl font-bold mb-4 bg-clip-text text-transparent bg-gradient-to-r from-primary-400 to-accent-400">Sanatan Khemariya</h3>
+          <p class="text-gray-400 mb-4">Computer Science student and ML enthusiast, passionate about creating innovative solutions using cutting-edge technologies.</p>
+          <div class="flex space-x-4">
+            <a href="https://github.com/sanatren" target="_blank" rel="noopener noreferrer" 
+               class="text-gray-400 hover:text-white transition-colors duration-300">
+              <i class="fab fa-github text-xl"></i>
+            </a>
+            <a href="https://linkedin.com/in/sanatank" target="_blank" rel="noopener noreferrer" 
+               class="text-gray-400 hover:text-white transition-colors duration-300">
+              <i class="fab fa-linkedin text-xl"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Quick Links -->
+        <div>
+          <h4 class="text-lg font-semibold mb-4">Quick Links</h4>
+          <ul class="space-y-2">
+            <li>
+              <a href="#about" class="text-gray-400 hover:text-white transition-colors duration-300">About</a>
+            </li>
+            <li>
+              <a href="#projects" class="text-gray-400 hover:text-white transition-colors duration-300">Projects</a>
+            </li>
+            <li>
+              <a href="#skills" class="text-gray-400 hover:text-white transition-colors duration-300">Skills</a>
+            </li>
+            <li>
+              <a href="#contact" class="text-gray-400 hover:text-white transition-colors duration-300">Contact</a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Contact -->
+        <div>
+          <h4 class="text-lg font-semibold mb-4">Contact Info</h4>
+          <ul class="space-y-2">
+            <li class="flex items-center">
+              <i class="fas fa-envelope text-primary-400 mr-2"></i>
+              <a href="mailto:sanatankhemariya04@gmail.com" class="text-gray-400 hover:text-white transition-colors duration-300">
+                sanatankhemariya04@gmail.com
+              </a>
+            </li>
+            <li class="flex items-center">
+              <i class="fas fa-map-marker-alt text-primary-400 mr-2"></i>
+              <span class="text-gray-400">Guna, Madhya Pradesh</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Divider -->
+      <div class="border-t border-gray-700 my-8"></div>
+
+      <!-- Bottom footer -->
+      <div class="flex flex-col md:flex-row justify-between items-center">
+        <p class="text-gray-400 text-sm mb-4 md:mb-0">
+          © 2024 Sanatan Khemariya. All rights reserved.
+        </p>
+      </div>
+
+      <!-- Back to top button -->
+      <button onclick="window.scrollTo({top: 0, behavior: 'smooth'})"
+              class="fixed bottom-8 right-8 bg-primary-600 text-white p-3 rounded-full h-10 w-10 shadow-lg hover:bg-primary-700 transition-colors duration-300 animate-bounce-slow">
+        <i class="fas fa-arrow-up"></i>
+      </button>
+    </div>
+  </footer>
+</div>
+</htmlCode></section>
+</body>
+</html>
