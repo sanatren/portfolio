@@ -363,8 +363,11 @@
       <div class="w-20 h-1 bg-gradient-to-r from-primary-500 to-accent-500 mx-auto rounded-full"></div>
     </div>
 
-    <!-- Projects grid -->
+   <!-- Projects grid -->
+<section>
+  <div class="container mx-auto px-4">
     <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+      
       <!-- Azazel (Do Not Modify) -->
       <div class="bg-white rounded-2xl shadow-lg overflow-hidden group hover:shadow-xl transform hover:-translate-y-2 transition-all duration-300 animate-slide-up" style="animation-delay: 400ms;">
         <div class="p-6">
@@ -430,7 +433,7 @@
             </div>
             <h3 class="text-2xl font-bold ml-4 group-hover:text-accent-600 transition-colors">ChurnMonitor</h3>
           </div>
-          <p class="text-gray-600 mb-4">An intelligent churn prediction system for the banking sector that achieved 87% model accuracy using advanced feature engineering on 50,000+ customer records, and delivers real-time insights via an interactive Streamlit dashboard.</p>
+          <p class="text-gray-600 mb-4">An AI-powered system to predict customer churn in the banking sector, achieving 87% accuracy on 50,000+ records and providing real-time insights.</p>
           <div class="flex flex-wrap gap-2 mb-4">
             <span class="px-3 py-1 text-sm bg-accent-100 text-accent-700 rounded-full">TensorFlow</span>
             <span class="px-3 py-1 text-sm bg-primary-100 text-primary-700 rounded-full">Scikit-learn</span>
@@ -439,15 +442,15 @@
           <ul class="space-y-2 mb-6">
             <li class="flex items-start">
               <i class="fas fa-check text-accent-500 mt-1 mr-2"></i>
-              <span class="text-gray-600"><strong>87% accuracy</strong> on 50,000+ records</span>
+              <span class="text-gray-600"><strong>High Accuracy</strong> with 87% model performance on 50,000+ records.</span>
             </li>
             <li class="flex items-start">
               <i class="fas fa-check text-accent-500 mt-1 mr-2"></i>
-              <span class="text-gray-600"><strong>Interactive dashboard</strong> for real-time churn insights</span>
+              <span class="text-gray-600"><strong>Real-time Churn Insights</strong> via an interactive Streamlit dashboard.</span>
             </li>
             <li class="flex items-start">
               <i class="fas fa-check text-accent-500 mt-1 mr-2"></i>
-              <span class="text-gray-600"><strong>20% faster data prep</strong> with automated preprocessing</span>
+              <span class="text-gray-600"><strong>Accelerated Data Prep</strong> cutting feature engineering time by 20%.</span>
             </li>
           </ul>
           <a href="https://github.com/sanatren/ChurnMonitor" target="_blank" class="inline-flex items-center text-accent-600 hover:text-accent-700 font-medium">
@@ -465,24 +468,28 @@
             </div>
             <h3 class="text-2xl font-bold ml-4 group-hover:text-primary-600 transition-colors">Legal Document Analyzer</h3>
           </div>
-          <p class="text-gray-600 mb-4">Transformer-based model for summarizing Indian & UK legal documents using custom NLP architecture.</p>
+          <p class="text-gray-600 mb-4">A fine-tuned BART model and custom transformer prototype for Indian & UK legal summarization.</p>
           <div class="flex flex-wrap gap-2 mb-4">
-            <span class="px-3 py-1 text-sm bg-primary-100 text-primary-700 rounded-full">PyTorch</span>
-            <span class="px-3 py-1 text-sm bg-secondary-100 text-secondary-700 rounded-full">NLP</span>
-            <span class="px-3 py-1 text-sm bg-accent-100 text-accent-700 rounded-full">Reinforcement Learning</span>
+            <span class="px-3 py-1 text-sm bg-primary-100 text-primary-700 rounded-full">BART</span>
+            <span class="px-3 py-1 text-sm bg-secondary-100 text-secondary-700 rounded-full">Transformers</span>
+            <span class="px-3 py-1 text-sm bg-accent-100 text-accent-700 rounded-full">PPO RL</span>
           </div>
           <ul class="space-y-2 mb-6">
             <li class="flex items-start">
               <i class="fas fa-check text-primary-500 mt-1 mr-2"></i>
-              <span class="text-gray-600"><strong>Custom BPE tokenizer</strong> with 50k vocab size</span>
+              <span class="text-gray-600"><strong>Fine-tuned BART Model</strong> for domain-specific legal text.</span>
             </li>
             <li class="flex items-start">
               <i class="fas fa-check text-primary-500 mt-1 mr-2"></i>
-              <span class="text-gray-600"><strong>Transformer architecture</strong> with encoder-decoder and attention modules</span>
+              <span class="text-gray-600"><strong>Custom Transformer Prototype</strong> with 50k BPE vocab and multi-head attention.</span>
             </li>
             <li class="flex items-start">
               <i class="fas fa-check text-primary-500 mt-1 mr-2"></i>
-              <span class="text-gray-600"><strong>Fine-tuning using PPO</strong> with ROUGE/BLEU rewards in a custom Gym environment</span>
+              <span class="text-gray-600"><strong>PPO-based RL</strong> optimizing ROUGE & BLEU scores.</span>
+            </li>
+            <li class="flex items-start">
+              <i class="fas fa-check text-primary-500 mt-1 mr-2"></i>
+              <span class="text-gray-600"><strong>Hosted on Hugging Face</strong> for easy access & inference.</span>
             </li>
           </ul>
           <a href="https://github.com/sanatren/legal_doc_analyzer-architecture/tree/main" target="_blank" class="inline-flex items-center text-primary-600 hover:text-primary-700 font-medium">
@@ -500,7 +507,7 @@
             </div>
             <h3 class="text-2xl font-bold ml-4 group-hover:text-primary-600 transition-colors">Easy-Notes</h3>
           </div>
-          <p class="text-gray-600 mb-4">AI-powered note-taking platform with predictive writing and real-time translation capabilities.</p>
+          <p class="text-gray-600 mb-4">An AI-powered note-taking platform with predictive writing and real-time translation features.</p>
           <div class="flex flex-wrap gap-2 mb-4">
             <span class="px-3 py-1 text-sm bg-primary-100 text-primary-700 rounded-full">FastAPI</span>
             <span class="px-3 py-1 text-sm bg-secondary-100 text-secondary-700 rounded-full">TensorFlow</span>
@@ -509,15 +516,15 @@
           <ul class="space-y-2 mb-6">
             <li class="flex items-start">
               <i class="fas fa-check text-primary-500 mt-1 mr-2"></i>
-              <span class="text-gray-600"><strong>66% accuracy</strong> next-word prediction using an LSTM model</span>
+              <span class="text-gray-600"><strong>Smart Next-Word Prediction</strong> with 66% accuracy using an LSTM model.</span>
             </li>
             <li class="flex items-start">
               <i class="fas fa-check text-primary-500 mt-1 mr-2"></i>
-              <span class="text-gray-600"><strong>94.6% translation accuracy</strong> with a Transformer-based English-Hindi model</span>
+              <span class="text-gray-600"><strong>High Translation Accuracy</strong> at 94.6% with a Transformer-based English-Hindi model.</span>
             </li>
             <li class="flex items-start">
               <i class="fas fa-check text-primary-500 mt-1 mr-2"></i>
-              <span class="text-gray-600"><strong>Optimized PostgreSQL</strong> queries and low-latency prediction API serving under 100ms</span>
+              <span class="text-gray-600"><strong>Optimized DB & Low Latency</strong> queries under 100ms using PostgreSQL and Supabase.</span>
             </li>
           </ul>
           <a href="https://github.com/sanatren/easy-notes/tree/main" target="_blank" class="inline-flex items-center text-primary-600 hover:text-primary-700 font-medium">
@@ -528,6 +535,7 @@
     </div>
   </div>
 </section>
+
 
 <!-- ========================= ACHIEVEMENTS SECTION ========================= -->
 <section id="achievements" class="py-20 bg-white">
