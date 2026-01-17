@@ -38,13 +38,6 @@
             position: relative;
         }
 
-        #star-canvas {
-            position: fixed;
-            top: 0;
-            left: 0;
-            z-index: -1;
-        }
-
         .text-glow {
             text-shadow: 0 0 40px rgba(0, 242, 255, 0.5);
         }
@@ -268,6 +261,12 @@
                         sanatankhemariya@gmail.com
                     </a>
                 </div>
+                <div class="flex items-center gap-4 text-gray-400 hover:text-brand-cyan transition-colors">
+                    <i class="fas fa-file-pdf text-brand-cyan"></i>
+                    <a href="sanatann.pdf" download class="contact-highlight px-2 py-1">
+                        Download Resume
+                    </a>
+                </div>
             </div>
         </div>
     </section>
@@ -438,20 +437,6 @@
     </footer>
 
     <script>
-        // Debug iframe loading
-        window.addEventListener('load', function() {
-            const iframe = document.getElementById('solar-iframe');
-            console.log('Portfolio loaded, checking solar system iframe...');
-
-            iframe.addEventListener('load', function() {
-                console.log('Solar system iframe loaded successfully');
-            });
-
-            iframe.addEventListener('error', function(e) {
-                console.error('Solar system iframe failed to load:', e);
-            });
-        });
-
         // Scroll reveal animations
         const observerOptions = {
             threshold: 0.15,
